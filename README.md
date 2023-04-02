@@ -1,5 +1,7 @@
 # hexo-renderer-markdown-it-plus
 
+Forked from [CHENXCHEN/hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
+
 This renderer plugin uses Markdown-it as a render engine on Hexo.
 
 This renderer plugin is forked from [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it/blob/master/lib/renderer.js).
@@ -8,6 +10,7 @@ Add some plugins and support third-part `markdown-it` plugin.
 This is [demo project](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus-demo.git).
 
 ## Main Features
+
 + Support for Markdown
 + Extensive configuration
 + Faster than the default renderer | hexo-renderer-marked
@@ -23,12 +26,14 @@ This is [demo project](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-pl
 + [mark](https://www.npmjs.com/package/markdown-it-mark)
 
 ## Install
+
 ```shell
 npm un hexo-renderer-marked --save
 npm i hexo-renderer-markdown-it-plus --save
 ```
 
 ## Options
+
 Configuring the renderer is a fairly simple task because all the settings are in the main hexo `_config.yml` file. You just need to open it in your favourite text editor and write down your configuration.
 
 ```yml
@@ -50,7 +55,9 @@ Katex plugin is enabled by default. However, this renderer alone does not work o
 `https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css`
 
 ## Advanced Options
+
 The markdown-it plugins listed above is enabled by default. If you want to disable any plugin, see the configuration example below:
+
 ```yml
 markdown_it_plus:
     highlight: true
@@ -66,27 +73,32 @@ markdown_it_plus:
             name: markdown-it-mark
             enable: false
 ```
+
 plugins enabled by default:
- + `markdown-it-emoji`  
- + `markdown-it-sub`  
- + `markdown-it-sup`  
- + `markdown-it-deflist`  
- + `markdown-it-abbr`  
- + `markdown-it-footnote`  
- + `markdown-it-ins`  
- + `markdown-it-mark`  
- + `@iktakahiro/markdown-it-katex`  
- + `markdown-it-toc-and-anchor`  
+
++ `markdown-it-emoji`  
++ `markdown-it-sub`  
++ `markdown-it-sup`  
++ `markdown-it-deflist`  
++ `markdown-it-abbr`  
++ `markdown-it-footnote`  
++ `markdown-it-ins`  
++ `markdown-it-mark`  
++ `@iktakahiro/markdown-it-katex`  
++ `markdown-it-toc-and-anchor`  
 
 ## Add other `markdown-it` Plugins
+
 If you want to add a plugin named as `markdown-it-something`:  
 
 1.Install this plugin
+
 ```javascript
 npm install markdown-it-something --save
 ```
 
 2.config main hexo `_config.yml`
+
 ```yml
 markdown_it_plus:
     # ...
