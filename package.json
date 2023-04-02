@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/erictt/hexo-renderer-markdown-it-plus#readme",
   "dependencies": {
-    "@vscode/markdown-it-katex": "microsoft/vscode-markdown-it-katex",
+    "markdown-it-katex": "erictt/markdown-it-katex",
     "clone": "^2.1.1",
     "highlight.js": "^11.5.1",
     "markdown-it": "^13.0.1",
